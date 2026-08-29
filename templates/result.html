@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результат</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url('/static/15086644.jpg');
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="username">{{ username }}</div>
+        <div class="loh-score">{{ "%.2f"|format(loh_count) }}</div>
+        <h1>{{summary}}</h1>
+        <a href="/" class="back">← Назад</a>
+    </div>
+</body>
+</html>
