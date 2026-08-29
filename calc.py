@@ -17,7 +17,7 @@ def process_user(user):
 }
 
     body = {
-    "limit" : "3"
+    "limit" : "100"
     }
     res = r.get(f"https://osu.ppy.sh/api/v2/users/{user}/beatmapsets/most_played", headers=headers, params=body).json()
 
